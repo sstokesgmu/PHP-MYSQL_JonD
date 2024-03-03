@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Testing Installation</title>
+  <title>Testing Installations</title>
 </head>
 <body>
   <h1><?php echo 'Welcome to PHP &amp; MySQL'?></h1>
