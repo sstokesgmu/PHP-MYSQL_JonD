@@ -1,10 +1,13 @@
+<?php
+  $name = 'Sterling';
+?>
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Testing Installations</title>
+  <title>Testing Installation</title>
 </head>
 <body>
-  <h1><?php echo 'Welcome to PHP &amp; MySQL'?></h1>
+  <h1><?php echo 'Welcome to PHP $name; MySQL'?></h1>
   <h2><?php echo 'Your web server is working'; ?></h2>
   <?php phpinfo(); ?>
 </body>
