@@ -1,7 +1,14 @@
 <?php 
-$name  = 'Guest';
-$name  = 'Ivy';
+//Initial Values
+$name  = "Guest";
 $price = 5;
+
+//Updated Values
+$name = "Greg";
+$price = 10;
+
+$name = "Sterling";
+$price = 100;
 ?>
 <!DOCTYPE html>
 <html>

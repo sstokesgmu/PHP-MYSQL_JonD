@@ -1,6 +1,9 @@
 <?php 
-$name  = 'Ivy';
-$price = 5;
+$name  = "Sterling";
+$character = 'C';
+$price = 2;
+$tax = .12;
+$paid = true;
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,5 +16,11 @@ $price = 5;
     <h2>Welcome <?php echo $name; ?></h2>
     <p>The cost of your candy is 
        $<?php echo $price; ?> per pack.</p>
+    <p>The tax is <?php echo $tax;?>.</p>
+    <p>Has the customer paid? <?php echo $paid;?><p>
+    <p>This is a test to see if the interperter understands single characters:
+      <?php echo $character;?></p>
+
+    
   </body>
 </html>
