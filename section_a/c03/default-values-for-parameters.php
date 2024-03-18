@@ -1,5 +1,5 @@
 <?php
-function calculate_cost($cost, $quantity, $discount = 0)
+function calculate_cost($cost, $quantity, $discount = 2)
 {
     $cost = $cost * $quantity;
     return $cost - $discount;

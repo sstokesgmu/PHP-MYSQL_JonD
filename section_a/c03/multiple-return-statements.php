@@ -1,12 +1,10 @@
 <?php
-$stock = 25;
-
+$stock = 8;
 function get_stock_message($stock)
 {
-    if ($stock >= 10) {
+    if ($stock >= 10) 
         return 'Good availability';
-    }
-    if ($stock > 0 && $stock < 10) {
+    elseif ($stock > 0 && $stock < 10) {
         return 'Low stock';
     }
     return 'Out of stock';

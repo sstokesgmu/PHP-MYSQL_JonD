@@ -4,6 +4,17 @@ $stock   = 5;
 $wanted  = 3;
 $deliver = true;
 $can_buy = (($wanted <= $stock) && ($deliver == true));
+
+//My variable additions
+$numberOfItems = 9;
+$monthsSubscribed = 4.5;
+$a = 1;
+$b = 3;
+$can_get_discount1 = (($wanted > $stock/2) or ($deliver == true));
+$can_get_discount2 = (($wanted < $stock) and ($deliver == true));
+$not_Check = (!($a < $b));
+$spaceship_Compare = (!($b <=> $a));
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,5 +29,8 @@ $can_buy = (($wanted <= $stock) && ($deliver == true));
     <p>Stock:   <?= $stock ?></p>
     <p>Wanted: <?= $wanted ?></p>
     <p>Can buy: <?= $can_buy ?></p>
+    <p>Discount 1: <?php echo $can_get_discount1; ?></p>
+    <p>Discount 2: <?php echo $can_get_discount2; ?></p>
+    <p>Not Check: <?= $not_Check ?></p>
   </body>
 </html>

@@ -1,6 +1,6 @@
 <?php 
-$stock   = 5;
-$ordered = 3;
+$stock   = 0;
+$ordered = 0;
 
 if ($stock > 0) {
     $message = 'In stock';

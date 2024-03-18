@@ -1,9 +1,11 @@
 <?php 
-$items    = 3;
-$cost     = 5;
+$items    = 10;
+$cost     = 50;
 $subtotal = $cost * $items;
 $tax      = ($subtotal / 100) * 20;
-$total    = $subtotal + $tax;
+$discount = ($subtotal / 100) * 25;
+$total    = $subtotal + $tax - $discount;
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,6 +20,7 @@ $total    = $subtotal + $tax;
     <p>Cost per pack: $<?= $cost ?></p>
     <p>Subtotal: $<?= $subtotal ?></p>
     <p>Tax: $<?= $tax ?></p>
+    <p>Discount: $<?= $discount ?></p>
     <p>Total: $<?= $total ?></p>
   </body>
 </html>

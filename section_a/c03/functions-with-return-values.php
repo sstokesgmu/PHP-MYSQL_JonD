@@ -4,6 +4,10 @@ function create_logo()
     return '<img src="img/logo.png" alt="Logo">';
 }
 
+function count_Up() {
+  return 2;
+}
+
 function create_copyright_notice()
 {
     $year    = date('Y');
@@ -24,6 +28,7 @@ function create_copyright_notice()
     <article>
       <h2>Welcome to The Candy Store</h2>
     </article>
+    <h2><?php echo count_Up() ?></h2>
     <footer>
       <?= create_logo() ?>
       <?= create_copyright_notice() ?>

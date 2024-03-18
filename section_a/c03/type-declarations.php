@@ -6,7 +6,6 @@ function calculate_total(int $price, int $quantity): int
 {
     return $price * $quantity;
 }
-
 $total = calculate_total($price, $quantity);
 ?>
 <!DOCTYPE html>

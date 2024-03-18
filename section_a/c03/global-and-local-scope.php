@@ -1,10 +1,10 @@
 <?php
-$tax = '20';
+$tax = '30';
 
 function calculate_total($price, $quantity)
 {
     $cost  = $price * $quantity;
-    $tax   = $cost  * (20 / 100);
+    $tax   = $cost  * (20 / 100); // This one is the local variable
     $total = $cost  + $tax;
     return $total;
 }
@@ -20,6 +20,6 @@ function calculate_total($price, $quantity)
     <p>Mints:  $<?= calculate_total(2, 5) ?></p>
     <p>Toffee: $<?= calculate_total(3, 5) ?></p>
     <p>Fudge:  $<?= calculate_total(5, 4) ?></p>
-    <p>Prices include tax at: <?= $tax ?>%</p>
+    <p>Prices include tax at: <?= $tax ?>%</p> <!-- this is affected by global tax variable -->
   </body>
 </html>

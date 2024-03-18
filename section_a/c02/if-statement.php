@@ -1,9 +1,13 @@
 <?php 
-$name     = 'Ivy';
+$username     = 'Sterling';
 $greeting = 'Hello';
 
-if ($name !== '') {
-    $greeting = 'Welcome back, ' . $name;
+if ($username !== ' ' && $username !== '') { // Condition is checking if theym have a username
+    $greeting = 'Welcome back, ' . $username;
+}
+else {
+  $username = 'guest';
+  $greeting = 'Welcome, ' . $username;
 }
 ?>
 <!DOCTYPE html>

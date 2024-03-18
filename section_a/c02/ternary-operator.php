@@ -1,5 +1,5 @@
 <?php 
-$stock   = 5;
+$stock   = 0;
 
 $message = ($stock > 0) ? 'In stock' : 'Sold out';
 ?>

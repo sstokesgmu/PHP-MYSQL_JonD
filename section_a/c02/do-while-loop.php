@@ -1,6 +1,6 @@
 <?php
-$packs = 5;
-$price = 1.99;
+$packs = 10;
+$price = 2.99;
 ?>
 <!DOCTYPE html>
 <html lang="en-us">
@@ -19,7 +19,7 @@ $price = 1.99;
         echo $price * $packs;
         echo '<br>';
         $packs--;
-    } while ($packs > 0);
+    } while ($packs >= 0);
     ?>
     </p>
   </body>
