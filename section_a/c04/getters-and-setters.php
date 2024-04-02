@@ -19,10 +19,15 @@ class Account {
         return $this->balance;
     }
 
-    public function withdraw(float $amount): float
+    public function withdraw(float $amount):string
     {
-        $this->balance -= $amount;
-        return $this->balance;
+        if($this-> balance >= $amount)
+        {
+            $this->balance -= $amount;
+            return "Withdraw successful. New Balance: $". $this->balance;
+        }
+        else 
+            return "Cannot Withdraw Balance too low";
     }
 
     public function getBalance(): float
@@ -37,4 +42,6 @@ $account = new Account(20148896, 'Savings', 80.00);
 <h2><?= $account->type ?> Account</h2>
 <p>Previous balance: $<?= $account->getBalance() ?></p>
 <p>New balance: $<?= $account->deposit(35.00) ?></p>
+<!-- Check is balance value is > 0 then we can withdraw-->
+<p><?php echo $account->withdraw(100.00) ?></p>
 <?php include 'includes/footer.php'; ?>
