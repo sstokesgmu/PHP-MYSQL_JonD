@@ -1,5 +1,5 @@
 <?php 
-$username     = 'Sterling';
+$username     = 'Janae';
 $greeting = 'Hello';
 
 if ($username !== ' ' && $username !== '') { // Condition is checking if theym have a username
