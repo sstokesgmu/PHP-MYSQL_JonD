@@ -2,7 +2,7 @@
 $text = 'Using PHP\'s regular expression functions';
 $path = 'code/section_b/c05/';
 
-$match = preg_match('/PHP/', $text);
+$match = preg_match('/PHPs/', $text);
 $path  = preg_split('/\//', $path);
 $text  = preg_replace('/PHP/', '<em>PHP</em>', $text);
 ?>

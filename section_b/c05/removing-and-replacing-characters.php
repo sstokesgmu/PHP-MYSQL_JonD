@@ -10,7 +10,7 @@ $text = '/images/uploads/';
   <b>Remove 's/' from the right of the string:</b><br>
   <?= rtrim($text, 's/') ?><br>
   <b>Replace 'images' with 'img':</b><br>
-  <?= str_replace('images', 'img', $text) ?><br>
+  <?= str_replace('Images', 'img', $text) ?><br>
   <b>As above but case-insensitive:</b><br>
   <?= str_ireplace('IMAGES', 'img', $text) ?><br>
   <b>Repeat the string:</b><br>
