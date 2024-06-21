@@ -6,7 +6,7 @@ $greeting_key = array_rand($greetings);
 $greeting     = $greetings[$greeting_key];
 
 // Array of best sellers, count items, list top items
-$bestsellers      = ['notebook', 'pencil', 'ink',];
+$bestsellers      = ['notebook', 'pencil', 'ink', 'binder'];
 $bestseller_count = count($bestsellers);
 $bestseller_text  = implode(', ', $bestsellers);
 
