@@ -1,8 +1,9 @@
 <?php
-$logged_in = false;
+$logged_in =  true;
 
 if ($logged_in == false) {
-    header('Location: login.php');
+  header('Location: login.php');
+  header('Cache-Control: max-age=1000, public'); //what does this do
     exit;
 }
 ?>

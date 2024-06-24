@@ -2,7 +2,8 @@
 $cities  = [
     'London' => '48 Store Street, WC1E 7BS',
     'Sydney' => '151 Oxford Street, 2021',
-    'NYC'    => '1242 7th Street, 10492',
+  'NYC'    => '1242 7th Street, 10492',
+  'New Jersey' => 'Mayor Kenneth A. Gibson Blvd',
 ];
 $city    = $_GET['city'];
 $address = $cities[$city];
