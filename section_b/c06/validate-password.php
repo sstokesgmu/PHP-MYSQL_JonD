@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'];
     $valid    = is_password($password);
     $message  = $valid ? 'Password is valid' :
-        'Password not strong enough';
+        'Password not strong enough or too long';
 }
 ?>
 <?php include 'includes/header.php'; ?>
