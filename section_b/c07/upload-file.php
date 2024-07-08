@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {                               // If 
 ?>
 <?php include 'includes/header.php' ?>
 
-<?= $message ?>
+<?= $message ?>  <!-- what does this do? -->
 <form method="POST" action="upload-file.php" enctype="multipart/form-data">
   <label for="image"><b>Upload file:</b></label>
   <input type="file" name="image" accept="image/*" id="image"><br>

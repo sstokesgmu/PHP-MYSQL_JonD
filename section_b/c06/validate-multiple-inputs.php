@@ -5,7 +5,8 @@ $form['age']   = '';                                                  // Initial
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {                           // If submitted
     $filters['email']                       = FILTER_VALIDATE_EMAIL;  // Email filter
     $filters['age']['filter']               = FILTER_VALIDATE_INT;    // Integer filter
-    $filters['age']['options']['min_range'] = 16;                     // Min value 16
+    $filters['age']['options']['min_range'] = 16;                       // Min value 16
+    $filters['age']['options']['max_range'] = 130;                    // MAx value 130
     $form = filter_input_array(INPUT_POST, $filters);                 // Validate data
 }
 ?>
