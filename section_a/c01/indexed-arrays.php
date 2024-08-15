@@ -2,7 +2,8 @@
 $best_sellers = ['Chocolate', 'Mints', 'Fudge',
     'Bubble gum', 'Toffee', 'Jelly beans', 'Licorice'];
 
-$manga_Wishlist =array("Sakamoto Days Vol.12","Jujutsu Kaisen, Vol. 23", "Jujustu Kaisen, Vol. 24", "Berserk, Vol. 20", "Berserk, Vol. 19", "Dragon Ball Z, Vol. 4");
+$manga_Wishlist =array("Sakamoto Days Vol.12","Jujutsu Kaisen, Vol. 23",
+    "Jujustu Kaisen, Vol. 24", "Berserk, Vol. 20", "Berserk, Vol. 19", "Dragon Ball Z, Vol. 4");
 ?>
 <!DOCTYPE html>
 <html>

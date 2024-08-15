@@ -1,4 +1,6 @@
 <?php
+
+// Here we created two associative arrays
 $nutrition = [
   'fat' => 16,
   'sugar' => 51,
@@ -6,7 +8,6 @@ $nutrition = [
   'protien' => 2.6,
 ];
 
-//My personal array 
 $user = [
   "name" => "Mary",
   "age" => 45.5,
@@ -16,12 +17,10 @@ $user = [
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Associative Arrays</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
   <h1>The Candy Store</h1>
   <h2>Nutrition (per 100g)</h2>
@@ -51,5 +50,4 @@ $user = [
     <?php echo $user[(string) "isAlive"]; ?> (1 means true btw)
   </p>
 </body>
-
 </html>
