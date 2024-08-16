@@ -4,12 +4,14 @@ $nutrition = [
     'sugar' => 51, 
     'salt'  => 0.25,
 ];
+
+// change the values of the associative array here
 $nutrition['fat']   = 36;
 $nutrition['fiber'] = 2.1;
 $nutrition['protien'] = 7.3;
 
 $shoppingList = ["Chocolate", "Bread", "Butter", "Cheese","Bubble Gum"];
-//Change the first and last element in the array to another Item 
+//Change the elements of the index array
 $shoppingList[0] = "Yougurt";
 $shoppingList[4] = "Doonuts";
 
