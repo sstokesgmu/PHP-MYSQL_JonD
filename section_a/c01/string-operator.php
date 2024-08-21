@@ -7,6 +7,12 @@ $usr_LastName = "Stokes"; // created a new variable
 $usr_FullName = "$usr_FirstName $usr_LastName"; // join string without (.) operator
 $message2 = $prefix . ', ' . $usr_FullName . ' for '; //setup a new message
 $message2 .= "Janae"; //use the concatenating assignment operator
+
+$firstname = "Mona";
+$lastname = "Rae";
+$fullname = "$firstname $lastname";
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,6 +26,7 @@ $message2 .= "Janae"; //use the concatenating assignment operator
     <p><?= $message ?></p>
     <h2> Second Message</h2>
     <p><?= $message2 ?></p>
+    <p><?= $fullname ?></p>
 
   </body>
 </html>

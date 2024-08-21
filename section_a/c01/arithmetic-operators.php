@@ -2,9 +2,13 @@
 $items    = 10;
 $cost     = 50;
 $subtotal = $cost * $items;
+$subtotal--;
+$subtotal++;
 $tax      = ($subtotal / 100) * 20;
 $discount = ($subtotal / 100) * 25;
 $total    = $subtotal + $tax - $discount;
+$remainder = $subtotal % 2;
+$power = $discount ** 3
 
 ?>
 <!DOCTYPE html>
@@ -22,5 +26,7 @@ $total    = $subtotal + $tax - $discount;
     <p>Tax: $<?= $tax ?></p>
     <p>Discount: $<?= $discount ?></p>
     <p>Total: $<?= $total ?></p>
+    <p>Remainder: <?= $remainder ?></p>
+    <p>Power: <?= $power ?></p>
   </body>
 </html>

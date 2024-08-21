@@ -3,7 +3,7 @@ $item    = 'Chocolate';
 $stock   = 5;
 $wanted  = 3;
 $deliver = true;
-$can_buy = (($wanted <= $stock) && ($deliver == true));
+$can_buy = (($wanted <= $stock) and ($deliver == true));
 
 //My variable additions
 $numberOfItems = 9;
@@ -12,8 +12,8 @@ $a = 1;
 $b = 3;
 $can_get_discount1 = (($wanted > $stock/2) or ($deliver == true));
 $can_get_discount2 = (($wanted < $stock) and ($deliver == true));
-$not_Check = (!($a < $b));
-$spaceship_Compare = (!($b <=> $a));
+$not_Check = !($a < $b);
+$spaceship_Compare = !($b <=> $a);
 
 ?>
 <!DOCTYPE html>
@@ -31,6 +31,8 @@ $spaceship_Compare = (!($b <=> $a));
     <p>Can buy: <?= $can_buy ?></p>
     <p>Discount 1: <?php echo $can_get_discount1; ?></p>
     <p>Discount 2: <?php echo $can_get_discount2; ?></p>
+    <p> When you echo FALSE, it doesn’t print anything.</p>
     <p>Not Check: <?= $not_Check ?></p>
+    <p>Spaceship Not: <?= $spaceship_Compare ?></p>
   </body>
 </html>
