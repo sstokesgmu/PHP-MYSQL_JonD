@@ -1,4 +1,6 @@
 <?php
+
+//You need to set the variable before it is called in the echo statement
 $day = 'Monday';
 $month = '';
 

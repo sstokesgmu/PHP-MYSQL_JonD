@@ -2,12 +2,12 @@
 $username     = 'Sterling';
 $greeting = 'Hello';
 
-if ($username !== ' ' && $username !== '') { // Condition is checking if theym have a username
+if ($username === 'Ben') { // Condition is checking if them have a username
     $greeting = 'Welcome back, ' . $username;
 }
 else {
-  $username = 'guest';
-  $greeting = 'Welcome, ' . $username;
+  $username = '';
+  $greeting = 'Welcome to the site, guest';
 }
 ?>
 <!DOCTYPE html>
