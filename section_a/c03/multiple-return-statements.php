@@ -22,3 +22,4 @@ function get_stock_message($stock)
     <p><?= get_stock_message($stock) ?></p>
   </body>
 </html>
+

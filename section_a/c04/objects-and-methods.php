@@ -19,9 +19,8 @@ class Account
     }
     public function transfer(float $amount): mixed // return a string or float
     {
-        if($this -> balance > 0){
-            $this ->balance -= $amount;
-        }
+        if($this -> balance > 0)
+            return $this ->balance -= $amount;
         else
             return "Insufficient Funds";
     }

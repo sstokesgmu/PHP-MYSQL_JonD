@@ -20,3 +20,4 @@ $total = calculate_total($price, $quantity);
     <p>Total $<?= $total ?></p>
   </body>
 </html>
+

@@ -31,3 +31,4 @@ function calculate_running_total($price, $quantity)
     </table>
   </body>
 </html>
+

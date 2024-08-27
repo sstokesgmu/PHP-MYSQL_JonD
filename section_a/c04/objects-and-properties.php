@@ -35,3 +35,4 @@ $item -> name = "Coffee";
   <p>Balance: $<?= $account->balance ?></p>
   <p>Item In Cat:  <?= $item->name ?></p>
 <?php include 'includes/footer.php'; ?>
+

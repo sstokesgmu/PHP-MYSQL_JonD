@@ -36,3 +36,4 @@ $global_prices = calculate_prices($us_price, $rates);
         AS &pound; <?= $global_prices['aud'] ?>)</p>
   </body>
 </html>
+
