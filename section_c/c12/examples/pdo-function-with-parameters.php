@@ -9,7 +9,7 @@ if (!$id) {
 $sql = "SELECT forename, surname
           FROM member
          WHERE id = :id;";
-$member = pdo($pdo, $sql, ['id' => $id])->fetch();
+$member = pdo($pdo, $sql, [$id])->fetch();
 
 if (!$member) {
     include 'page-not-found.php';
