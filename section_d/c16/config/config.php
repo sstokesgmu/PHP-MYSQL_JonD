@@ -14,8 +14,8 @@ $server   = 'localhost';             // Server the database is on
 $db       = 'phpbook-2';             // Name of the database
 $port     = '';                      // Port is usually 8889 in MAMP and 3306 in XAMPP
 $charset  = 'utf8mb4';               // UTF-8 encoding using 4 bytes of data per character
-$username = 'YOUR USERNAME';         // Enter YOUR username here
-$password = 'YOUR PASSWORD';         // Enter YOUR password here
+$username = 'sstokes';         // Enter YOUR username here
+$password = 'password123';         // Enter YOUR password here
 
 // DO NOT CHANGE NEXT LINE
 $dsn = "$type:host=$server;dbname=$db;port=$port;charset=$charset"; // Create DSN
